@@ -1,0 +1,67 @@
+.boardDiv{
+  width:40% !important;
+}
+.boardTopDiv{
+  width:100%;
+  height: 33px;
+}
+
+
+.boardFormDiv{
+  border:1px solid;
+  padding:0 1.5%;
+}
+
+.boardFormDiv div{
+  margin-top:10px;
+}
+
+.boardFormDiv p{
+  font-weight: bold;
+  float:left;
+  margin:0;
+}
+
+.boardFormDiv input{
+}
+
+.boardFormTopDiv{
+  width:100%;
+  height:30px;
+}
+.titleDiv{
+  width:55%;
+  float:left;
+}
+
+.titleDiv input{
+  width: 70%;
+}
+.writerDiv{
+  width:45%;
+  float:left;
+}
+.writerDiv input{
+  width:50%;
+  float:left;
+}
+
+.contentDiv{
+  width:100%;
+  margin-bottom:10px;
+}
+
+.contentDiv input{
+  width:97%;
+  margin-top:5px;
+  height:30px;
+  margin-left:0;
+}
+
+pre{
+  margin:0 !important;
+}
+
+
+
+

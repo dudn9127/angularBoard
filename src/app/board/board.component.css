@@ -1,0 +1,78 @@
+.boardDiv{
+  margin-left:3%;
+  width:40%;
+}
+
+.boardTopDiv{
+  width:100%;
+}
+
+.boardTopDiv h3{
+  width:80%;
+  float:left;
+  margin-top:0;
+}
+
+.boardTopDiv button{
+  margin-top:2px;
+  width:20%;
+  float:left;
+}
+
+.boardDiv table{
+  padding:3px;
+  width:100%;
+  border: 1px solid;
+}
+
+.boardDiv td{
+
+}
+
+.boardDiv th,td{
+  margin:0 5%;
+  text-align: center;
+}
+
+.board-no{
+  width:10%;
+}
+
+.board-title{
+  width:50%;
+  cursor: pointer;
+}
+
+.board-writer{
+  width:30%;
+}
+
+.board-del{
+  width:10%;
+}
+
+.boardBottomDiv{
+  padding-top:10px;
+  width:100%;
+}
+
+.boardBottomDiv button{
+  padding:0 10px;
+  float:right;
+}
+
+.pagingDiv{
+  width:100%;
+  height:30px;
+}
+.pagingDiv ul{
+  list-style: none;
+  width:100%;
+}
+
+.pagingDiv ul li{
+  float:left;
+  display:block;
+  padding-right: 15px;
+  cursor: pointer;
+}

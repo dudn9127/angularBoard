@@ -1,0 +1,41 @@
+<!--<div class="content">
+  <div class="card-container">
+    <form class="consumption-form" (ngSubmit)="onSubmit()" [formGroup]="consumptionForm">
+      <input formControlName="firstname" matInput name="firstname" placeholder="first name" type="text" required>
+      <br/>
+      <input formControlName="lastname" matInput name="lastname" placeholder="last name" type="text" required>
+      <br/>
+      <button mat-raised-button color="primary" type="submit">Btn</button>
+    </form>
+  </div>
+
+  <div>
+    Full Name: {{firstName + " " + lastName}}
+  </div>
+</div>-->
+
+<div class="content">
+  <h3>[--Parent Component--]</h3>
+  <input type="text"  placeholder="name" [(ngModel)]="firstName2"/>
+  <br/>
+  <!--<button (click)="onClick()">Click</button>
+  <div>
+    Full Name: {{name2}}
+  </div>
+  -->
+</div>
+
+<div class="content">
+  <app-sample6 [name]="firstName2" (sendObject)="upDateList($event)"></app-sample6>
+</div>
+
+<div>
+  <h3>[--Parent: Name List--]</h3>
+  <ul>
+    <li *ngFor="let name of this.nameList">{{name}}</li>
+  </ul>
+</div>
+
+
+
+

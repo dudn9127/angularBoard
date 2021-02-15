@@ -5,3 +5,4 @@ describe('App.Router.Module', () => {
     expect(new App.Router.Module()).toBeTruthy();
   });
 });
+

@@ -1,0 +1,24 @@
+
+.contentP{
+  font-weight: normal !important;
+}
+
+pre{
+  margin:0 !important;
+}
+
+.titleDiv input{
+  width: 70%;
+}
+
+.writerDiv input{
+  width:50%;
+  float:left;
+}
+
+.contentDiv input{
+  width:97%;
+  margin-top:5px;
+  height:30px;
+  margin-left:0;
+}

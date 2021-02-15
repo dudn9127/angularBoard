@@ -1,0 +1,20 @@
+<div class="boardDiv">
+  <div class="boardTopDiv">
+    <h3>+) Create New Post</h3>
+  </div>
+  <div class="boardFormDiv">
+    <div class="boardFormTopDiv">
+      <div class="titleDiv"><p>Title: </p><input type="text" [(ngModel)]="title"/></div>
+      <div class="writerDiv"><p>Writer: </p><input type="text" [(ngModel)]="writer"/></div>
+    </div>
+    <div class="contentDiv"><p>Content: </p>
+      <br/>
+      <input type="text" [(ngModel)]="content"/>
+    </div>
+  </div>
+  <div class="boardBottomDiv">
+    <button (click)="createPost()">Save</button>
+  </div>
+</div>
+
+

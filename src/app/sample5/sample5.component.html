@@ -1,0 +1,8 @@
+<h3>[--Sample 5--]</h3>
+<p>id: {{sample.id}}</p>
+<p>nickname: {{sample.nickname}}</p>
+
+<h3>[--Sample 5-- NgFOR]</h3>
+<ul *ngIf="sampleList">
+  <li *ngFor="let sample2 of sampleList">{{sample2 | json}}</li>
+</ul>

@@ -1,0 +1,39 @@
+<!--<button (click)="clickAfterPrint()">{{title}} title</button>-->
+<script>
+  /*var app = angular.module("myApp", []);
+
+  app.directive("sample", function(){
+    var linker = function(scope, element, attrs) {
+      element.bind('mouseover', function (e) {
+        //element.css({'color':red});
+        alert("!");
+      });
+    };
+
+    var controller = function($scope){
+      var ctrlSpan = this;
+      ctrlSpan.text="sample";
+    }
+
+    return {
+      restrict: 'A',
+      link:linker,
+      controller:controller,
+      controllerAs: 'ctrlSpan'
+    };
+  });*/
+
+
+
+
+</script>
+
+<div class="content">
+  <p>(내장 pipe)현재 시간: {{currentTime | date:"MM-dd HH:mm:ss"}}</p>
+  <p >(custom pipe)현재 시간: {{currentTime | dateformPipe}}</p>
+</div>
+
+<div class="content" ng-app="myApp">
+  <span custom>directive sample</span>
+</div>
+

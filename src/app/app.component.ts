@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-task-app';
+
+  constructor() {}
+
+  public goSample(value: string): void{
+    location.href = './' + value;
+  }
 }
+
+

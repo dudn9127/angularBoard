@@ -1,0 +1,35 @@
+<input type="hidden" #selection>
+<div class="boardDiv">
+  <div class="boardTopDiv">
+    <h3>Jooae Board</h3>
+    <button (click)="selection.value='create'">+ New Post</button>
+  </div>
+  <table>
+    <thead>
+    <tr>
+      <th class="board-no">No</th>
+      <th class="board-title">Title</th>
+      <th class="board-writer">Writer</th>
+      <th class="board-del">Del</th>
+    </tr>
+    </thead>
+    <tbody *ngIf="boardList.length" >
+    <tr *ngFor = "let post of boards; let i = index">
+      <td class="board-no">{{i+1+((currentPage-1)*pageSize)}}</td>
+      <td class="board-title" (click)="selection.value='show'" (click)="showBoard(post.id)">{{post.title}}</td>
+      <td class="board-writer">{{post.writer}}</td>
+      <td class="board-del" (click)="deleteBoard(post.id)"><button>X</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="pagingDiv">
+    <ul *ngFor = "let page of pageArr; let i = index">
+      <li (click)="getBoardList(i+1, 3)">{{i+1}}</li>
+    </ul>
+  </div>
+</div>
+<div class="boardActionDiv" [ngSwitch]="selection.value">
+  <pre *ngSwitchCase="'create'"><app-create></app-create></pre>
+  <pre *ngSwitchCase="'show'"><app-show></app-show></pre>
+</div>
+

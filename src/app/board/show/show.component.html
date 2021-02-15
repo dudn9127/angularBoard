@@ -1,0 +1,35 @@
+<input type="hidden" #selection/>
+<div class="boardDiv" [ngSwitch]="selection.value">
+   <div class="boardTopDiv">
+     <pre *ngSwitchDefault><h3>Show you the post</h3></pre>
+     <pre *ngSwitchCase="'update'"><h3>Modify the post</h3></pre>
+   </div>
+   <div class="boardFormDiv">
+     <div class="boardFormTopDiv">
+       <div class="titleDiv">
+         <p>Title: </p>
+         <pre *ngSwitchDefault><p class="contentP">{{board.title}}</p></pre>
+         <pre *ngSwitchCase="'update'"><input type="text" [(ngModel)]="title" /></pre>
+       </div>
+       <div class="writerDiv">
+         <p>Writer: </p>
+         <pre *ngSwitchDefault><p class="contentP">{{board.writer}}</p></pre>
+         <pre *ngSwitchCase="'update'"><input type="text" [(ngModel)]="writer"/></pre>
+       </div>
+     </div>
+     <div class="contentDiv">
+       <p>Content: </p>
+       <br/>
+       <pre *ngSwitchDefault><p class="contentP">{{board.content}}</p></pre>
+       <pre *ngSwitchCase="'update'"><input type="text" [(ngModel)]="content"/></pre>
+       <br/>
+     </div>
+   </div>
+   <div class="boardBottomDiv">
+     <pre *ngSwitchDefault>
+       <button (click)="selection.value='update'"> Modify </button>
+     </pre>
+     <pre *ngSwitchCase="'update'"><button (click)="updatePost()" (click)="selection.value=''"> Save </button></pre>
+   </div>
+ </div>
+
